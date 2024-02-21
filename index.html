@@ -1,17 +1,17 @@
 <html>
     <div id="lightning"></div>
-    <script src="https://clipperventures--staging.sandbox.my.site.com/selfServeBooking/lightning/lightning.out.js"></script>
-
+    <script src="https://clipperventures--staging.sandbox.my.site.com/leadFormsOut/lightning/lightning.out.js"></script>
+    <meta name="viewport" content="width=640"/>
     <script>
-         $Lightning.use("c:selfServeBooking", function() {
-            window.$Lightning.createComponent("c:selfServeBookingComp", {},
+         $Lightning.use("c:leadFormsOutApp", function() {
+            window.$Lightning.createComponent("c:leadFormsOut", {},
                   "lightning",
                   function(cmp) {
                     console.log("LWC component was created");
                   }
               );
             },
-           'https://clipperventures--staging.sandbox.my.site.com/selfServeBooking/'
+           'https://clipperventures--staging.sandbox.my.site.com/leadFormsOut/'
           );
     </script>
 </html>
